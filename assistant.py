@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import psycopg2 # Example using a PostgreSQL driver; use your database's driver
 
-# --- Database Connection Setup (replace with your actual config) ---
+# Database Connection Setup (replace with your actual config)
 # In a real app, manage this connection carefully (e.g., using Flask-SQLAlchemy)
 def get_db_connection():
     conn = psycopg2.connect(
@@ -12,10 +12,10 @@ def get_db_connection():
     )
     return conn
 
-# --- Flask App Initialization ---
+# Flask App Initialization 
 app = Flask(__name__)
 
-# --- API Endpoints ---
+# API Endpoints
 
 @app.route('/api/developers', methods=['POST'])
 def create_developer():
