@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-# --- FAKE IN-MEMORY DATABASE (for simple testing) ---
+# FAKE IN-MEMORY DATABASE (for simple testing) 
 # This dictionary will act as our database.
 db = {
     "developers": [],
@@ -25,7 +25,7 @@ db = {
 }
 # These will act as our auto-incrementing IDs
 next_developer_id = 1
-# --- END OF FAKE DATABASE SETUP ---
+# END OF FAKE DATABASE SETUP 
 
 
 app = Flask(__name__)
